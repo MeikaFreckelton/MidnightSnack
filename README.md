@@ -35,6 +35,10 @@ nice to have features:
 2. happiness metre - based on foods eaten and obstacles hit
 3. hole portal - allows for user to get chicken hidden by angry kitty
 4. have emoji change to sad cat face emoji when near obstacles
+5. have different and harder levels
+6. have music playing
+7. have a timer
+8. have the foods and obstacles pop up suddenly 
 
 
 

@@ -1,4 +1,4 @@
-
+#!/usr/bin/env ruby
 
 #symbols
 $cat = "\u{1F431}"
