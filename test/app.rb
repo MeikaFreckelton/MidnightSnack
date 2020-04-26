@@ -7,33 +7,26 @@ $rat = "\u{1F400}"
 $fish1 = "\u{1F41F}"
 $angry_kitty = "\u{1F63E}"
 $sleeping_head = "\u{1F634}"
-$dead_end = "\u{2620}"
+$dead_end = "\u{1F480}"
 $chicken = "\u{1F357}"
 $bed = "\u{1F6CF}"
 $hole = "\u{1F573}"
+$sad = "\u{2639}"
 
 
 #linking files
 require 'io/console'
-# require 'colorize'
-# require 'rainbow'
-require 'raimbow/refinement'
-using Rainbow
-
-
-
+require 'colorize'
 require_relative './welcome.rb'
 require_relative './title.rb'
 require_relative './game.rb'
 require_relative './game_over.rb'
-
-
-
+require_relative './gemfile.rb'
+require_relative './welcome2.rb'
 
 #board layout 
 board1 = Array.new
 $BOARD2 = board1
-
 
 board1[0] = board1[29] = Array.new( 21, "-")
 board1[1] = [" "," "," "," "," "," "," "," "," ","______"]
@@ -61,11 +54,19 @@ board1[22] = ["|","|",$rat," ","|","|"," "," "," "," "," "," "," ","-","-","-","
 board1[23] = ["|","-","-","-","-"," ","|","-","-","-","-","|"," ","|"," "," "," ","|","-","-","-","-","|"] 
 board1[24] = ["|"," "," "," "," "," "," "," "," "," "," ","|"," ","|"," "," "," ","|",$bed," "," "," ","|",] #17
 board1[25] = ["|"," "," ","-","-","-"," "," "," "," "," ","|"," ","|"," "," "," ","-","-","-","|"," ","|"] #9 8
-board1[26] = ["|"," "," ","|",$sleeping_head,"|","-","-","-","-","|"," "," ","|","-","-","-","-","-","-","|"," ","|"]
-board1[27] = ["|"," "," ","|"," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," ","|"] #29
+board1[26] = ["|"," ","|",$sleeping_head," ","|","-","-","-","-","|"," "," ","|","-","-","-","-","-","-","|"," ","|"]
+board1[27] = ["|"," ","|"," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," ","|"] #29
 board1[28] = ["|"," "," ","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-"] 
 
-welcome
-# game = CatGame.new($BOARD2)
+
+
+
+
+
+
+welcome 
+ready_or_not
+# welcome = Welcome.new
+game = CatGame.new($BOARD2)
 
 

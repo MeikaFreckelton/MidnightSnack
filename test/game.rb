@@ -1,6 +1,3 @@
-require 'io/console'
-require_relative './game_over.rb'
-
 # class for main gameplay
 class CatGame
     
@@ -16,19 +13,19 @@ class CatGame
         input()
     end
 
-    # prints board array
-    def print_board()
+    
+    def print_board() # prints board array
         system "clear"
-        puts @@board.map {|board| board.join(" ")}
+        puts @@board.map {|board| board.join(" ").blue}
     end
 
 
-    #  method to move user 
+    
     # had to add multiple statements to accomodate for multiple objects on board 
     # which caused problems. ie. having them all on the one statement caused the user to 
     # be able to go over the actual board layout objects and delete them during gameplay
     # although it is not DRY it is the only thing that worked
-    def move(direction)
+    def move(direction) #  method to move user 
         @@board[@@y][@@x] = " "
 
         if 
@@ -44,10 +41,13 @@ class CatGame
 
 
         elsif 
-            (direction == "up" && (@@board[@@y - 1][@@x] == " " or @@board[@@y - 1][@@x] == ($chicken or $rat or $fish1)))
+            (direction == "up" && (@@board[@@y - 1][@@x] == " " or @@board[@@y - 1][@@x] == ($chicken or $rat)))
                 @@y -= 1
         elsif 
-            (direction == "up" && (@@board[@@y - 1][@@x] == " " or @@board[@@y - 1][@@x] == ($mouse or $sleeping_head)))
+            (direction == "up" && (@@board[@@y - 1][@@x] == " " or @@board[@@y - 1][@@x] == ($mouse or $fish1)))
+                @@y -= 1
+        elsif 
+            (direction == "up" && (@@board[@@y - 1][@@x] == " " or @@board[@@y - 1][@@x] == $sleeping_head))
                 @@y -= 1
 
 
@@ -60,20 +60,16 @@ class CatGame
         @@board[@@y][@@x] = $cat
         print_board()
 
-        # method that gets rid of emojis when eaten and to print game end messages 
-        case @@current_pos
+         
+        case @@current_pos # gets rid of emojis when eaten and to print game end messages
             when $fish1
                 print_message("fish")
-                # $fish1 = nil
             when $rat
                 print_message("rat")
-                # $rat = nil
             when $mouse
                 print_message("mouse")
-                # $mouse = nil
             when $chicken
                 print_message("chicken")
-                # $chicken = nil
             when $bed
                 puts game_end("congrats")
             when $sleeping_head
@@ -92,6 +88,8 @@ class CatGame
             print_message("angry_kitty")
         elsif direction == "up" and @@board[@@y-1][@@x] == $sleeping_head
             print_message("sleeping_head")
+        elsif direction == "left" and @@board[@@y][@@x-1] == $sleeping_head
+            print_message("sleeping_head")
         elsif direction == "left" and @@board[@@y][@@x-2] == $bed
             print_message("bed")
         end
@@ -102,6 +100,7 @@ class CatGame
         loop do
             case STDIN.getch()
             when "q" then game_end("game_over")
+            # when "r" then game = CatGame.new($BOARD2)
             when "\e"
                 case STDIN.getch() 
                 when '['
@@ -117,23 +116,26 @@ class CatGame
         end
     end
 
+    def help
+        puts 
+    end
 
-    # method that informs user they are near the end
-    def sleep_input
+    
+    def sleep_input # method that informs user they are near the end
         puts "you may continue to sleep or you may turn back and find more food or a different place to sleep."
     end
 
-    #method used to print messages when emoji is close to or on obstacles or food
-    def print_message(message)
+    
+    def print_message(message) #method used to print messages when emoji is close to or on obstacles or food
         case message
             when "chicken" 
                 puts "Yay! you found a piece of chicken! Mr kitty is very pleased."
             when "rat"
-                puts "A rat! Mr kitty had fun hunting it."
+                puts "A rat! Mr kitty likes to hunt."
             when "fish"
                 puts "Yay you found a fish swimming a pond!"
             when "mouse"
-                puts "A mouse! Mr kitty had fun hunting it."
+                puts "A mouse! Mr kitty is happy."
             when "sleeping_head"
                 puts "Yay you found mr kitty's sleeping human."
                 sleep_input
