@@ -29,6 +29,13 @@ This app is being developed to challenge myself and to see what I can do with th
 2. Along the path that the user has to take, there will be obstacles and there will be food to eat. The food and the obstacles will be displayed as emojis(or text art). The obstacles will include other cats and a hole in the ground. The other cats may be angry and territorial, blocking you from entering a certain branch of the path. Or the other cats may be hungry as well and have food near them. The cat is still until the user approaches this other hungry cat, and it runs to eat the food, preventing you from getting it. The food items will include fishes in a pond, pieces of chicken and mice. When the user approaches the food it will disappear.(123 words)
 3. As the user is moving through the maze different text will print above the game depending on where the user is. Different messages will be printed as the user moves near obstacles, informing them of the obstacle and telling them what to do. Different messages will also be printed as the user moves near food items, informing them they’ve found a snack and telling them what to do. There are two options to put the kitty to bed: their own bed  or their humans face. When the user reaches the bed to put the kitty to sleep it will print a message asking if the user wants to put the kitty to sleep and end the game or keep looking for food, then it will print a finished message and ask if they want to restart the game.(121 words)
 
+nice to have features:
+
+1. fullness metre - based on foods eaten
+2. happiness metre - based on foods eaten and obstacles hit
+3. hole portal - allows for user to get chicken hidden by angry kitty
+4. have emoji change to sad cat face emoji when near obstacles
+
 
 
 ## User interaction and experience
@@ -37,11 +44,21 @@ At the beginning of the game, after a welcome message is printed, instructions i
 
 
 
+## Implementation plan
 
 
 
 
 
+
+
+
+
+
+
+
+
+(http://unicode.org/emoji/charts/full-emoji-list.html#1f420)
 
 
 
