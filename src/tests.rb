@@ -1,10 +1,12 @@
 require 'test/unit'
 require_relative './app.rb'
+require 'simplecov'
+SimpleCov.start
 
 class GameTest < Test::Unit::TestCase
     def test_left #testing the movement of keys
         game = CatGame.new(board)
-        assert_equal("left", @@x-=1)
+        assert_equal("left", @@x-=2)
     end
 
     def test_up #tests if right will move right
@@ -17,8 +19,15 @@ class GameTest < Test::Unit::TestCase
         assert_equal("\e[A", @@y-=1)
     end
 
-    def test_fail 
+    def test_food #tests if when kitty in game eats food, the message is printed
+        game = CatGame.new(board)
+        assert_equal((@@current_pos = $fish1),(print_message("fish")) )
+    end
+
+    def test_fail #prints if assertion is false
         assert_equal(false, "Assertion was false")
     end
 
 end
+
+#all of these tests should run without error at the current point in time

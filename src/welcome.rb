@@ -3,7 +3,7 @@ end
 
 def welcome # welcome method with greeting, title and instructions
     system "clear"
-    
+    puts "\n\n"
     name = (ARGV.length > 0) && ARGV[0]  #command line argument, can write name when running program to skip the program asking you for your name 
     if !name 
         "What is your name?".each_char {|c| print c.blue ; sleep(0.1)}
@@ -61,7 +61,7 @@ def welcome # welcome method with greeting, title and instructions
         puts break_arr.join(" ").magenta
         sleep(3)
         puts "\n"
-    puts "If you wish to quit the game at any time, type 'q'".red
+    puts "If you wish to quit the game at any time, type 'q'\n".red
         puts break_arr.join(" ").magenta
         sleep(4)
         puts "\n"
