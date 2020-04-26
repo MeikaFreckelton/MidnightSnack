@@ -1,6 +1,8 @@
 # Terminal App
 
+**Trello board:** https://trello.com/invite/b/VbpJaRmW/aa30c3ced559d1d73b860fb8e46e7073/terminalapp
 
+**Github repository:** https://github.com/MeikaFreckelton/terminal_app
 
 ## Statement of purpose and scope
 
