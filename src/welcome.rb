@@ -26,6 +26,7 @@ def welcome # welcome method with greeting, title and instructions
     
     def ask_for_s
         "Please press 's' to start...".each_char {|c| print c.blue ; sleep(0.1)}
+        puts "\n"
         start_input = gets.chomp
         input_validation(start_input)
     rescue StandardError => e
@@ -74,9 +75,6 @@ def validate_answer(answer)
     raise StandardError, "Invalid, 'y' or 'n':" if answer != "y" and answer != "n" #or if answer != "n" #if answer != "n"
     answer
 end
-
-
-
 
 def ready_or_not
     puts "are you ready to begin?('y' or 'n')".green
