@@ -3,7 +3,7 @@ require 'colorize'
 require_relative '../welcome.rb'
 require_relative '../title.rb'
 require_relative '../game_over.rb'
-# require_relative '..//
+
 
 class Apptest < Test::Unit::TestCase
     def test_start_game #tests whether name given in welcome class is empty, fails if name is empty
