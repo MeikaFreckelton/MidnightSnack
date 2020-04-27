@@ -49,15 +49,13 @@ At the beginning of the game, after a welcome message is printed, instructions i
 
 ## Control flow diagram 
 
-![](/Users/meika/Desktop/terminal_app/docs/Control_flow_diagram.png)
+![Control_flow_diagram](/Users/meika/Desktop/terminal_app/docs/Control_flow_diagram.png)
 
  
 
 ## Original Board design
 
-![](/Users/meika/Downloads/IMG_0101.jpg)
-
-
+![IMG_0101](/Users/meika/Desktop/terminal_app/docs/IMG_0101.jpg)
 
 Unicode:
 
