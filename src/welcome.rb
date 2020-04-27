@@ -1,8 +1,6 @@
 class StandardError
 end
 
-
-
 class WelcomeClass
     attr_accessor :name, :start_input, :answer
 
@@ -50,14 +48,14 @@ class WelcomeClass
 
         system "clear"
         break_arr = Array.new(40, "-")
-        # print TTY::Box.frame(width: 100, height: 100, border: :thick) do
         puts "\n\n"
         puts "INTSTRUCTIONS".red.bold
             sleep(1)
             puts break_arr.join(" ").magenta
+            puts "\n"
             sleep(1)
-            puts "Oh no, mr kitty is starved but it is midnight and the humans are asleep...\n".blue
-            puts "you are his only hope in finding some yummy snacks.".blue
+            puts "Oh no, mr kitty is starved but it is midnight and the humans are asleep...".blue
+            puts "You are his only hope in finding some yummy snacks.".blue
             sleep(1)
             puts "\n"
             puts break_arr.join(" ").magenta
@@ -93,7 +91,7 @@ class WelcomeClass
     end
 
     def ready_or_not
-        puts "are you ready to begin?('y' or 'n')".green
+        puts "Are you ready to begin?('y' or 'n')".green
         @answer = gets.strip
         validate_answer(@answer)
             if @answer == "n"
