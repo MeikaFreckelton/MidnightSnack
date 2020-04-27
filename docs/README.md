@@ -4,7 +4,26 @@
 
 **Github repository:** https://github.com/MeikaFreckelton/terminal_app
 
-[TOC]
+1. 1. [Statement of purpose and scope](#statement-of-purpose-and-scope)
+        * [What the game will do:](#what-the-game-will-do-)
+        * [The problem to be solved and why it is being developed:](#the-problem-to-be-solved-and-why-it-is-being-developed-)
+        * [The target audience and how a member of the target audience will use it:](#the-target-audience-and-how-a-member-of-the-target-audience-will-use-it-)
+     * [Features](#features)
+           * [Essential features](#essential-features)
+           * [Nice to have features](#nice-to-have-features)
+     * [User interaction and experience](#user-interaction-and-experience)
+     * [Control flow diagram](#control-flow-diagram)
+     * [Help](#help)
+           * [Steps to install](#steps-to-install)
+           * [Dependencies and system requirements](#dependencies-and-system-requirements)
+           * [Features](#features-1)
+     * [Testing](#testing)
+           * [Manual Testing Table](#manual-testing-table)
+           * [Test Cases](#test-cases)
+     * [Original Board design](#original-board-design)
+
+   <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 
 
 
@@ -21,7 +40,7 @@
 ##### What the game will do:
 
 - The program will open, print text art of the title.
-- It will print a greeting message and instructions - the user is informed they have to help the kitty find a midnight snack and help it get back to bed. Printed also is a list of commands the user may use, such as "q" to quit the game, "r" to restart the game, the arrow keys to navigate. 
+- It will print a greeting message and instructions - the user is informed they have to help the kitty find a midnight snack and help it get back to bed it also tells the user they can use "q" to quit the game and to use the arrow keys to move.
 - They then have to move the kitty (emoji) down the path (down the screen through a path that is made out of keyboard symbols (text art)).
 - Different paths will appear to the kitty depending on which path they take, different obstacles will pop up as well as different foods to eat or even dead ends. 
 - Different messages will be printed during the game depending on which paths the user takes, the obstacle at hand, the foods the cat eats and then when the kitty arrives at its bed.
@@ -44,7 +63,7 @@ This app is being developed to challenge myself and to see what I can do with th
 
 1. The user moves a cat emoji through a path printed on the screen, using their arrow keys to navigate. The path will be made out of keyboard symbols and will go down the screen, branching off onto different paths where different obstacles or foods will be. At the very end of the path there will be a bed which the user has to find and then put the kitty to bed when he is full.
 2. Along the path that the user has to take, there will be obstacles and there will be food to eat. The food and the obstacles will be displayed as emojis(or text art). The obstacles will include other cats and a hole in the ground. The other cats may be angry and territorial, blocking you from entering a certain branch of the path. Or the other cats may be hungry as well and have food near them. The cat is still until the user approaches this other hungry cat, and it runs to eat the food, preventing you from getting it. The food items will include fishes in a pond, pieces of chicken and mice. When the user approaches the food it will disappear.
-3. As the user is moving through the maze different text will print above the game depending on where the user is. Different messages will be printed as the user moves near obstacles, informing them of the obstacle and telling them what to do. Different messages will also be printed as the user moves near food items, informing them they’ve found a snack and telling them what to do. There are two options to put the kitty to bed: their own bed  or their humans face. When the user reaches the bed to put the kitty to sleep it will print a message asking if the user wants to put the kitty to sleep and end the game or keep looking for food, then it will print a finished message and ask if they want to restart the game.
+3. As the user is moving through the maze different text will print above the game depending on where the user is. Different messages will be printed as the user moves near obstacles, informing them of the obstacle and telling them what to do. Different messages will also be printed as the user moves near food items, informing them they’ve found a snack and telling them what to do. There are two options to put the kitty to bed: their own bed or their humans face. When the user reaches the bed to put the kitty to sleep it will print a message asking if the user wants to put the kitty to sleep and end the game or keep looking for food, then it will print a congratulations message and ask if they want to restart the game.
 
 ##### Nice to have features
 
@@ -63,7 +82,7 @@ This app is being developed to challenge myself and to see what I can do with th
 - Game asks if the user is ready to begin, by pressing 'y' or 'n'.
 - if 'n' is pressed, game ends. If 'y' is pressed, game begins.
 - Additionally, throughout the game, promts will appear, giving further specific instructions. 
-- The user will use the arrow keys to navigate through the game, the user will also be able to enter "q" to quit and exit the game and "r" to restart the game.
+- The user will use the arrow keys to navigate through the game, the user will also be able to enter "q" to quit.
 - If errors are raised during gameplay, they will be handled by the program and an appropriate error message will be displayed to the user.
   - For example, if the user accidentally presses something other than an arrow key during the navigation it will print "Not an arrow key, try again".
 
@@ -71,7 +90,7 @@ This app is being developed to challenge myself and to see what I can do with th
 
 ![](/Users/meika/Desktop/terminal_app/docs/Control_flow.png?raw=true "control flow")
 
-
+(Since completing the app, it differs from this diagram)
 
 ## Help 
 
@@ -118,17 +137,43 @@ bash run_app.sh name
 
 ## Testing
 
-Manual Testing
+##### Manual Testing Table
+
+| Feature                         | What It Is                                                   | Expected Outcome                                             | Actual Outcome                                               | Is It a Problem?                                             |
+| ------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Command Line Argument - name    | Run the program from the terminal and write your name after.<br/>Eg. “ruby app.rb meika” | This should skip asking you for your name and print a greeting with your name. | Problem arised, but was handled. Now works as expected.      | It was a problem, as it would throw an error for using ‘gets’ later on in the program, this was fixed by inserting “ARGV.clear” afterwards. It is no longer a problem. |
+| Welcome Screen                  | A screen which asks you for your name(if not given in CLI), prints the title gradually, and asks if you are ready to start. | Should ask for name and print greeting with name. Text should print by character, in blue. Title should print by line in red. Ready to start question should print by character in blue. | As expected.                                                 | no                                                           |
+| Title                           | ASCII text of title.                                         | Print by line in red                                         | As expected.                                                 | no                                                           |
+| Would you like to start?(s)     | Question asking if you are ready to start, have to press ‘s’. | When ‘s’ is pressed, screen should go to instructions, if something other than ‘s’ is pressed, invalid message will print, user will have to enter ‘s’. | As expected.                                                 | no                                                           |
+| Instructions                    | Instructions for game.                                       | Should print by sentence, in blue, with magenta line breaks in between. | As expected.                                                 | no                                                           |
+| Would you like to start(y or n) | Question asking if you are ready to start, have to press ‘y’ or ‘n’. | When ‘y’ is pressed, game will begin. When ‘n’ is pressed game over message will print. When something else is print, error is handled and user is required to press ‘y’ or ‘n’. | As expected.                                                 | no                                                           |
+| Board prints                    | Board layout prints.                                         | Board I have designed gets printed.                          | I spent a large amount of time attempting to perfect the design of the board and turn it into arrays that can be used functionally. It works now, although, because of the emojis the spacing in the board is inconsistent and looks messy, I am yet to find a solution to this problem. The board also moves when the emoji moves which  haven’t fixed yet. | Functionally, no, aesthetically, yes.                        |
+| Emoji                           | Moving emoji with arrow keys.                                | Using the arrow keys the user may move the cat emojis across the spaces in the board. | I also spent a large amount of time on this trying to get it to work, studying other code and finally getting it to work. Although, I couldn’t find a solution to this myself, I looked at the way, the creator of the maze game shown in class achieved this, and tried to recreate that in my own way. | No                                                           |
+| Food + food messages            | Food emojis in game, when user moves cat emoji to them, they dissapear and message prints. | Food emojis scattered on board, when user goes to them they disappear and a message is printed. | As expected.                                                 | No, it does cause issues for the board though.               |
+| Obstacle messages               | Obstacle emojis scattered on board,Message prints when user is near. | When close to obstacles a warning message is printed to user. Can’t interact with them. | I tried to include the code for these messages in the same case statements used to move the objects, however it did not work and I had to create its own case. | No                                                           |
+| "q"                             | Quit.                                                        | When user presses ‘q’ during gameplay, game over message is printed. | As expected.                                                 | No                                                           |
+| Bed                             | Finish point 1.                                              | When user goes to bed, congratulations message is printed.   | As expected.                                                 | No                                                           |
+| Sleeping head                   | Finish point 2.                                              | When user goes to sleeping head, congratulations message is printed. | As expected.                                                 | No                                                           |
+| Game over                       | game over message                                            | When user quits game, game over message is printed in red.   | As expected.                                                 | No                                                           |
+| Game finished                   | congratulations message                                      | When user finishes game, congratulations message is printed. | As expected.                                                 | No                                                           |
+
+##### Test Cases
+
+To test my app, I created three test cases.
+
+1. The first test case I created tests whether the name given by the user is empty or not. 
 
 
 
 
 
+2. The second test I created tests whether, when asked to enter 's', if 's' is entered and fails if not.
 
 
-Test Cases
 
 
+
+3. The third test I created tests whether, when asked to enter 'y' or 'n' if they are actually entered.
 
 
 
