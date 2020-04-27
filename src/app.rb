@@ -20,8 +20,7 @@ require 'colorize'
 require 'test/unit'
 require_relative './welcome.rb'
 require_relative './title.rb'
-# require_relative './game.rb'
-require_relative './game2.rb'
+require_relative './game.rb'
 require_relative './game_over.rb'
 
 
@@ -66,9 +65,7 @@ board1[28] = ["|"," "," ","-","-","-","-","-","-","-","-","-","-","-","-","-","-
 
 
 
-welcome 
-ready_or_not
-# welcome = Welcome.new
+welcome = WelcomeClass.new
 game = CatGame.new($BOARD2)
 
 
