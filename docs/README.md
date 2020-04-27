@@ -172,8 +172,8 @@ To test my app, I created three test cases.
 
 ## Original Board design
 
-![IMG_0101](/Users/meika/Desktop/terminal_app/docs/IMG_0101.jpg)
 
+![IMG_0101](terminal_app/blob/master/docs/Control_flow.png)
 Unicode:
 
 (http://unicode.org/emoji/charts/full-emoji-list.html#1f420)
