@@ -72,7 +72,7 @@ This app is being developed to challenge myself and to see what I can do with th
 ![](/Users/meika/Desktop/terminal_app/docs/Control_flow.png?raw=true "control flow")
 
 ```
-![alt text](https://github.com/MeikaFreckelton/Terminal_app/docs/Control_flow.png "control flow")
+
 ```
 
  
