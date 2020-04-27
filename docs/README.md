@@ -79,7 +79,7 @@ This app is being developed to challenge myself and to see what I can do with th
 
 ## Control flow diagram 
 
-![picture](docs/Control_flow.png)
+![picture](/Control_flow.png)
 
 (Since completing the app, it differs from this diagram)
 
