@@ -150,6 +150,8 @@ bash run_app.sh name
 
 ##### Test Cases
 
+![](screentest.png)
+
 To test my app, I created three test cases.
 
 1. The first test case I created tests whether the name given by the user is empty or not. 
