@@ -4,7 +4,7 @@
 
 **Github repository:** https://github.com/MeikaFreckelton/terminal_app
 
-### Table Of Contents
+# Table Of Contents
 
 1. [Statement of purpose and scope](#statement-of-purpose-and-scope)
 2. [Features](#features)
