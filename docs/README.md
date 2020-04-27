@@ -173,10 +173,10 @@ To test my app, I created three test cases.
 ## Original Board design
 
 
-![IMG_0101](terminal_app/blob/master/docs/Control_flow.png)
+![IMG_0101](ogboard.jpg)
 Unicode:
 
-(http://unicode.org/emoji/charts/full-emoji-list.html#1f420)
+
 
 
 
