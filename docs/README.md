@@ -83,6 +83,41 @@ This app is being developed to challenge myself and to see what I can do with th
 
 (Since completing the app, it differs from this diagram)
 
+## Implementation Plan
+
+##### Opening Screen 
+
+1. figure out how to get text art 
+2. figure out how to print text art
+3. pick text art to use
+4. create welcome screen rb
+5. create welcome method including opening screen and greeting and instructions
+6. use colorize gem to add colour
+7. figure out how to print different sections of message at one time.
+
+##### Greeting and Instructions
+
+1. write out instructions and beginning story
+2. assign variables for commands for the user to use
+3. figure out how to assign different keys to move the emoji
+4. use .center to have the text centered
+
+##### Begin Game
+
+1. create game.rb
+2. create a class for game 
+3. figure out how to draw the game DONE
+4. draw the game
+5. figure out how to create barriers for the game
+6. figure out how to have the obstacles pop up when the user nears them
+7. figure out how to print messages when the user is at certain positions.
+8. figure out how to make foods dissapear when user navigates to them.
+9. figure out how to use emojis - unicode
+10. collect all unicodes for emojis
+11. create game over message 
+12. create game win message
+13. put board in array
+
 ## Help 
 
 ##### Steps to install
@@ -111,9 +146,9 @@ bash run_app.sh
 bash run_app.sh name
 ```
 
-##### Dependencies and system requirements
+##### Dependencies 
 
-
+- To use this application, You require the ruby gems which are included in the file.
 
 ##### Features 
 
