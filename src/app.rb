@@ -68,6 +68,6 @@ board1[28] = ["|"," "," ","-","-","-","-","-","-","-","-","-","-","-","-","-","-
 
 
 welcome = WelcomeClass.new
-# game = CatGame.new($BOARD2)
+game = CatGame.new($BOARD2)
 
 

@@ -13,6 +13,7 @@
 5. [Help/Usage](#help)
 6. [Testing](#testing)
 7. [Original Board design](#original-board-design)
+8. [Devlopment Log](#Development-Log)
 
 
 
