@@ -66,8 +66,8 @@ board1[28] = ["|"," "," ","-","-","-","-","-","-","-","-","-","-","-","-","-","-
 
 
 
-# welcome 
-# ready_or_not
+welcome 
+ready_or_not
 # welcome = Welcome.new
 game = CatGame.new($BOARD2)
 
