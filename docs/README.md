@@ -157,18 +157,18 @@ To test my app, I created three test cases.
 1. The first test case I created tests whether the name given by the user is empty or not. 
 
 
-![](test1)
+![](test1.png)
 
 
 2. The second test I created tests whether, when asked to enter 's', if 's' is entered and fails if not.
 
 
-![](test2)
+![](test2.png)
 
 
 3. The third test I created tests whether, when asked to enter 'y' or 'n' if they are actually entered.
 
-![](test3)
+![](test3.png)
 
 
 
