@@ -5,21 +5,12 @@
 **Github repository:** https://github.com/MeikaFreckelton/terminal_app
 
 1. 1. [Statement of purpose and scope](#statement-of-purpose-and-scope)
-        * [What the game will do:](#what-the-game-will-do-)
-        * [The problem to be solved and why it is being developed:](#the-problem-to-be-solved-and-why-it-is-being-developed-)
-        * [The target audience and how a member of the target audience will use it:](#the-target-audience-and-how-a-member-of-the-target-audience-will-use-it-)
-     * [Features](#features)
-           * [Essential features](#essential-features)
-           * [Nice to have features](#nice-to-have-features)
+     2. [Features](#features)
      * [User interaction and experience](#user-interaction-and-experience)
      * [Control flow diagram](#control-flow-diagram)
      * [Help](#help)
            * [Steps to install](#steps-to-install)
-           * [Dependencies and system requirements](#dependencies-and-system-requirements)
-           * [Features](#features-1)
-     * [Testing](#testing)
-           * [Manual Testing Table](#manual-testing-table)
-           * [Test Cases](#test-cases)
+     6. [Testing](#testing)
      * [Original Board design](#original-board-design)
 
    <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
