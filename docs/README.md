@@ -69,7 +69,7 @@ This app is being developed to challenge myself and to see what I can do with th
 
 ## Control flow diagram 
 
-![](/Users/meika/Desktop/terminal_app/docs/Control_flow.png)
+![](/Users/meika/Desktop/terminal_app/docs/Control_flow.png?raw=true "control flow")
 
  
 
