@@ -116,9 +116,9 @@ class CatGame
         end
     end
 
-    def help
-        puts 
-    end
+    # def help
+    #     puts 
+    # end
 
     
     def sleep_input # method that informs user they are near the end

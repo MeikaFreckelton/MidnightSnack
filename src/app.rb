@@ -18,12 +18,12 @@ $sad = "\u{2639}"
 require 'io/console'
 require 'colorize'
 require 'test/unit'
-require_relative './gemfile.rb'
 require_relative './welcome.rb'
 require_relative './title.rb'
-require_relative './game.rb'
+# require_relative './game.rb'
+require_relative './game2.rb'
 require_relative './game_over.rb'
-require_relative './gemfile.rb'
+
 
 
 #board layout 
@@ -66,8 +66,8 @@ board1[28] = ["|"," "," ","-","-","-","-","-","-","-","-","-","-","-","-","-","-
 
 
 
-welcome 
-ready_or_not
+# welcome 
+# ready_or_not
 # welcome = Welcome.new
 game = CatGame.new($BOARD2)
 
