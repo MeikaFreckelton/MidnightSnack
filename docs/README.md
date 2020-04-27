@@ -4,14 +4,13 @@
 
 **Github repository:** https://github.com/MeikaFreckelton/terminal_app
 
-1. 1. [Statement of purpose and scope](#statement-of-purpose-and-scope)
-     2. [Features](#features)
-     * [User interaction and experience](#user-interaction-and-experience)
-     * [Control flow diagram](#control-flow-diagram)
-     * [Help](#help)
-           * [Steps to install](#steps-to-install)
-     6. [Testing](#testing)
-     * [Original Board design](#original-board-design)
+1. [Statement of purpose and scope](#statement-of-purpose-and-scope)
+2. [Features](#features)
+3. [User interaction and experience](#user-interaction-and-experience)
+4. [Control flow diagram](#control-flow-diagram)
+5. [Help/Usage](#help)
+6. [Testing](#testing)
+7. [Original Board design](#original-board-design)
 
    <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
