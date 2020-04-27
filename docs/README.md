@@ -79,7 +79,7 @@ This app is being developed to challenge myself and to see what I can do with th
 
 ## Control flow diagram 
 
-![](/Users/meika/Desktop/terminal_app/docs/Control_flow.png?raw=true "control flow")
+![picture](docs/Control_flow.png)
 
 (Since completing the app, it differs from this diagram)
 
@@ -101,9 +101,9 @@ This app is being developed to challenge myself and to see what I can do with th
 
 - In your terminal, run the following:
 
-  ```
-  bash run_app.sh
-  ```
+```
+bash run_app.sh
+```
 
 - (optional) If you'd like to skip the program asking for your name, type it in the same line:
 
@@ -113,7 +113,7 @@ bash run_app.sh name
 
 ##### Dependencies and system requirements
 
-.....
+
 
 ##### Features 
 
