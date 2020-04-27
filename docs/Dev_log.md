@@ -67,19 +67,5 @@ I have just completed my tests and everything is working as it should be. After 
 
 ### Screenshots from trello board:
 
-![](/Users/meika/Desktop/terminal_app/screens/Screen Shot 2020-04-21 at 4.11.49 pm.png)
 
-![Screen Shot 2020-04-26 at 3.39.10 pm](/Users/meika/Desktop/terminal_app/screens/Screen Shot 2020-04-26 at 3.39.10 pm.png)
-
-![Screen Shot 2020-04-26 at 3.39.17 pm](/Users/meika/Desktop/terminal_app/screens/Screen Shot 2020-04-26 at 3.39.24 pm.png)
-
-![Screen Shot 2020-04-26 at 3.39.33 pm](/Users/meika/Desktop/terminal_app/screens/Screen Shot 2020-04-26 at 3.39.33 pm.png)
-
-![Screen Shot 2020-04-26 at 3.39.53 pm](/Users/meika/Desktop/terminal_app/screens/Screen Shot 2020-04-26 at 3.39.53 pm.png)
-
-![Screen Shot 2020-04-26 at 3.39.58 pm](/Users/meika/Desktop/terminal_app/screens/Screen Shot 2020-04-26 at 3.39.58 pm.png)
-
-![Screen Shot 2020-04-26 at 3.40.03 pm](/Users/meika/Desktop/terminal_app/screens/Screen Shot 2020-04-26 at 3.40.03 pm.png)
-
-![Screen Shot 2020-04-26 at 3.40.40 pm](/Users/meika/Desktop/terminal_app/screens/Screen Shot 2020-04-26 at 3.40.40 pm.png)
 
