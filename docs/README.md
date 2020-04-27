@@ -4,16 +4,16 @@
 
 **Github repository:** https://github.com/MeikaFreckelton/terminal_app
 
-1. 1. [Statement of purpose and scope](#statement-of-purpose-and-scope)
-     2. [Features](#features)
-     * [User interaction and experience](#user-interaction-and-experience)
-     * [Control flow diagram](#control-flow-diagram)
-     * [Help](#help)
-           * [Steps to install](#steps-to-install)
-     6. [Testing](#testing)
-     * [Original Board design](#original-board-design)
+# Table Of Contents
 
-   <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+1. [Statement of purpose and scope](#statement-of-purpose-and-scope)
+2. [Features](#features)
+3. [User interaction and experience](#user-interaction-and-experience)
+4. [Control flow diagram](#control-flow-diagram)
+5. [Help/Usage](#help)
+6. [Testing](#testing)
+7. [Original Board design](#original-board-design)
+
 
 
 
@@ -79,7 +79,7 @@ This app is being developed to challenge myself and to see what I can do with th
 
 ## Control flow diagram 
 
-![](/Users/meika/Desktop/terminal_app/docs/Control_flow.png?raw=true "control flow")
+![alternativetext](Control_flow.png)
 
 (Since completing the app, it differs from this diagram)
 
@@ -101,9 +101,9 @@ This app is being developed to challenge myself and to see what I can do with th
 
 - In your terminal, run the following:
 
-  ```
-  bash run_app.sh
-  ```
+```
+bash run_app.sh
+```
 
 - (optional) If you'd like to skip the program asking for your name, type it in the same line:
 
@@ -113,7 +113,7 @@ bash run_app.sh name
 
 ##### Dependencies and system requirements
 
-.....
+
 
 ##### Features 
 
@@ -172,8 +172,8 @@ To test my app, I created three test cases.
 
 ## Original Board design
 
-![IMG_0101](/Users/meika/Desktop/terminal_app/docs/IMG_0101.jpg)
 
+![IMG_0101](terminal_app/blob/master/docs/Control_flow.png)
 Unicode:
 
 (http://unicode.org/emoji/charts/full-emoji-list.html#1f420)
