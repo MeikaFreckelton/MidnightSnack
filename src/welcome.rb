@@ -47,7 +47,7 @@ class WelcomeClass
         ask_for_s
 
         system "clear"
-        break_arr = Array.new(40, "-")
+        break_arr = Array.new(45, "-")
         puts "\n\n"
         puts "INTSTRUCTIONS".red.bold
             sleep(1)

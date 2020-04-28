@@ -1,4 +1,3 @@
-
 # game over message method 
 def game_end(option)
     case option

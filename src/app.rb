@@ -18,7 +18,6 @@ $sad = "\u{2639}"
 require 'io/console'
 require 'colorize'
 require 'test/unit'
-# require 'tty-box'
 require_relative './welcome.rb'
 require_relative './title.rb'
 require_relative './game.rb'
