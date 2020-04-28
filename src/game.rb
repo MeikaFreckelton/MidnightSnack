@@ -16,7 +16,7 @@ class CatGame
         system "clear"
         puts @@board.map {|board| board.join(" ").blue}
     end
-  
+
     def print_message(message) #method used to print messages when emoji is close to or on obstacles or food
         case message
             when "chicken" 
@@ -41,53 +41,42 @@ class CatGame
                 puts "Oh no an angry kitty, turn back quick!"
         end
     end 
-    
-    def move(direct)
-        case direct
-        when "A"
-            @@y -= 1
-        when "B"
-            @@y += 1
-        when "C"
-            @@x += 1
-        when "D"
-            @@x -= 1
-        end
-    end
 
+    # moves user accross board
     def move_print(direction)
         @@board[@@y][@@x] = " "
         case direction
         when "A" # up
             if @@board[@@y - 1][@@x] == " " or @@board[@@y - 1][@@x] == ($chicken or $rat)
-                move("A")
+                @@y -= 1
+
             elsif @@board[@@y - 1][@@x] == " " or @@board[@@y - 1][@@x] == ($mouse or $fish1)
-                move("A")
+                @@y -= 1
             elsif @@board[@@y - 1][@@x] == " " or @@board[@@y - 1][@@x] == $sleeping_head
-                move("A")
+                @@y -= 1
             end
 
         when "B" # down
             if @@board[@@y + 1][@@x] == " " or @@board[@@y + 1][@@x] == ($fish1 or $rat)
-                move("B")
+                @@y += 1
             end
 
         when "C" #right
             if @@board[@@y][@@x + 1] == " " or @@board[@@y][@@x + 1] == $fish1
-                move("C")
+                @@x += 1
             end
 
         when "D" #left
             if @@board[@@y][@@x - 1] == " " or @@board[@@y][@@x - 1] == $rat
-                move("D")
+                @@x -= 1
             elsif @@board[@@y][@@x - 1] == " " or @@board[@@y][@@x - 1] == $bed
-                move("D")
+                @@x -= 1
             end
         end
 
 
 
-        
+        # updates current position, prints board again
         @@current_pos = @@board[@@y][@@x]
         @@board[@@y][@@x] = $cat
         print_board()
@@ -106,7 +95,7 @@ class CatGame
         when $sleeping_head
             puts game_end("congrats")
         end
-
+        #  prints obstacle messages
         if direction == "C" and @@board[@@y][@@x+1] == $dead_end
             print_message("dead_end")
         elsif direction == "C" and @@board[@@y][@@x+1] == $angry_kitty
@@ -122,17 +111,10 @@ class CatGame
         elsif direction == "D" and @@board[@@y][@@x-2] == $bed
             print_message("bed")
         end
-
-
-
     end
     
 
-
-
-
-    
-    
+    #takes input from arrow keys, then calls move method based on input
     def input()
         loop do   
             case STDIN.getch()
@@ -148,11 +130,7 @@ class CatGame
                     when "D" then move_print("D")
                     end
                 end
-            end
-            # @@current_pos = @@board[@@y][@@x]
-            # @@board[@@y][@@x] = $cat
-            # print_board() 
-
+            end 
         end
     end
 end
