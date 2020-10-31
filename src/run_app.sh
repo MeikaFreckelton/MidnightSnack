@@ -2,5 +2,5 @@
 
 bundle install
 
-# gem update --system
+gem update --system
 ruby app.rb
