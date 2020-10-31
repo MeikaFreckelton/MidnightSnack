@@ -1,8 +1,6 @@
+Midnight Snack is a terminal game in which you are given the role of a cat who needs your help in navigating through the maze to find a suitable midnight snack.
 
 
-**Trello board:** https://trello.com/invite/b/VbpJaRmW/aa30c3ced559d1d73b860fb8e46e7073/terminalapp
-
-**Github repository:** https://github.com/MeikaFreckelton/terminal_app
 
 # Table Of Contents
 
