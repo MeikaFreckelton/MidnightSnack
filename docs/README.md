@@ -1,6 +1,6 @@
 # Welcome to Midnight Snack! 🐱
 
-This is a terminal game in which you are given the role of a cat who needs your help in navigating through the maze to find a suitable midnight snack.
+This is a terminal game in which you are given the role of a cat who needs your help in navigating through the maze to find a suitable midnight snack. (created with Ruby)
 
 
 
